@@ -1,0 +1,11 @@
+plt.figure(figsize=(22, 10))
+sns.boxplot(x='platform', 
+            y= 'total_sales', 
+            data= latest_games, 
+            showfliers=False,
+            showmeans=True,
+            meanprops={"marker":"s", "markerfacecolor":"white", "markeredgecolor":"blue"}
+           )
+plt.title('Распределение продаж по платформам')
+plt.grid(True)
+plt.show()
